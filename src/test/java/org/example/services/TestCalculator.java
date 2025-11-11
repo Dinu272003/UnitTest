@@ -1,10 +1,7 @@
 package org.example.services;
 
 import org.example.calculatorService.Calculator;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.w3c.dom.ls.LSOutput;
 
 public class TestCalculator {
@@ -62,5 +59,14 @@ public class TestCalculator {
         System.out.println("After Class Annotation Method...");
     }
 
+    @After
+    public  void afterClassAnnoOnly(){
+        System.out.println("After Annotation Only...");
+    }
+
+    @Before
+    public void beforeEachCase(){
+        System.out.println("Before Each cases...");
+    }
 
 }
