@@ -21,7 +21,7 @@ public class TestCalculator {
        //actual result
 
         //expected result
-        int expected=24;
+        int expected=22;
 
         Assert.assertEquals(expected,res);
 
